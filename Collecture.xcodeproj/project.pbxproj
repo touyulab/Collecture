@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D10DA77D1CD1E571007DF029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA77C1CD1E571007DF029 /* AppDelegate.swift */; };
+		D10DA77F1CD1E571007DF029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA77E1CD1E571007DF029 /* ViewController.swift */; };
+		D10DA7821CD1E571007DF029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10DA7801CD1E571007DF029 /* Main.storyboard */; };
+		D10DA7841CD1E571007DF029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10DA7831CD1E571007DF029 /* Assets.xcassets */; };
+		D10DA7871CD1E571007DF029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10DA7851CD1E571007DF029 /* LaunchScreen.storyboard */; };
+		D10DA7921CD1E572007DF029 /* CollectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA7911CD1E572007DF029 /* CollectureTests.swift */; };
+		D10DA79D1CD1E572007DF029 /* CollectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA79C1CD1E572007DF029 /* CollectureUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D10DA78E1CD1E572007DF029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D10DA7711CD1E571007DF029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10DA7781CD1E571007DF029;
+			remoteInfo = Collecture;
+		};
+		D10DA7991CD1E572007DF029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D10DA7711CD1E571007DF029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10DA7781CD1E571007DF029;
+			remoteInfo = Collecture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D10DA7791CD1E571007DF029 /* Collecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10DA77C1CD1E571007DF029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D10DA77E1CD1E571007DF029 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D10DA7811CD1E571007DF029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D10DA7831CD1E571007DF029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D10DA7861CD1E571007DF029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D10DA7881CD1E571007DF029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10DA78D1CD1E572007DF029 /* CollectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10DA7911CD1E572007DF029 /* CollectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectureTests.swift; sourceTree = "<group>"; };
+		D10DA7931CD1E572007DF029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10DA7981CD1E572007DF029 /* CollectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10DA79C1CD1E572007DF029 /* CollectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectureUITests.swift; sourceTree = "<group>"; };
+		D10DA79E1CD1E572007DF029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D10DA7761CD1E571007DF029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10DA78A1CD1E572007DF029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10DA7951CD1E572007DF029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D10DA7701CD1E571007DF029 = {
+			isa = PBXGroup;
+			children = (
+				D10DA77B1CD1E571007DF029 /* Collecture */,
+				D10DA7901CD1E572007DF029 /* CollectureTests */,
+				D10DA79B1CD1E572007DF029 /* CollectureUITests */,
+				D10DA77A1CD1E571007DF029 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D10DA77A1CD1E571007DF029 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D10DA7791CD1E571007DF029 /* Collecture.app */,
+				D10DA78D1CD1E572007DF029 /* CollectureTests.xctest */,
+				D10DA7981CD1E572007DF029 /* CollectureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D10DA77B1CD1E571007DF029 /* Collecture */ = {
+			isa = PBXGroup;
+			children = (
+				D10DA77C1CD1E571007DF029 /* AppDelegate.swift */,
+				D10DA77E1CD1E571007DF029 /* ViewController.swift */,
+				D10DA7801CD1E571007DF029 /* Main.storyboard */,
+				D10DA7831CD1E571007DF029 /* Assets.xcassets */,
+				D10DA7851CD1E571007DF029 /* LaunchScreen.storyboard */,
+				D10DA7881CD1E571007DF029 /* Info.plist */,
+			);
+			path = Collecture;
+			sourceTree = "<group>";
+		};
+		D10DA7901CD1E572007DF029 /* CollectureTests */ = {
+			isa = PBXGroup;
+			children = (
+				D10DA7911CD1E572007DF029 /* CollectureTests.swift */,
+				D10DA7931CD1E572007DF029 /* Info.plist */,
+			);
+			path = CollectureTests;
+			sourceTree = "<group>";
+		};
+		D10DA79B1CD1E572007DF029 /* CollectureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D10DA79C1CD1E572007DF029 /* CollectureUITests.swift */,
+				D10DA79E1CD1E572007DF029 /* Info.plist */,
+			);
+			path = CollectureUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D10DA7781CD1E571007DF029 /* Collecture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10DA7A11CD1E572007DF029 /* Build configuration list for PBXNativeTarget "Collecture" */;
+			buildPhases = (
+				D10DA7751CD1E571007DF029 /* Sources */,
+				D10DA7761CD1E571007DF029 /* Frameworks */,
+				D10DA7771CD1E571007DF029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Collecture;
+			productName = Collecture;
+			productReference = D10DA7791CD1E571007DF029 /* Collecture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D10DA78C1CD1E572007DF029 /* CollectureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10DA7A41CD1E572007DF029 /* Build configuration list for PBXNativeTarget "CollectureTests" */;
+			buildPhases = (
+				D10DA7891CD1E572007DF029 /* Sources */,
+				D10DA78A1CD1E572007DF029 /* Frameworks */,
+				D10DA78B1CD1E572007DF029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10DA78F1CD1E572007DF029 /* PBXTargetDependency */,
+			);
+			name = CollectureTests;
+			productName = CollectureTests;
+			productReference = D10DA78D1CD1E572007DF029 /* CollectureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D10DA7971CD1E572007DF029 /* CollectureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10DA7A71CD1E572007DF029 /* Build configuration list for PBXNativeTarget "CollectureUITests" */;
+			buildPhases = (
+				D10DA7941CD1E572007DF029 /* Sources */,
+				D10DA7951CD1E572007DF029 /* Frameworks */,
+				D10DA7961CD1E572007DF029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10DA79A1CD1E572007DF029 /* PBXTargetDependency */,
+			);
+			name = CollectureUITests;
+			productName = CollectureUITests;
+			productReference = D10DA7981CD1E572007DF029 /* CollectureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D10DA7711CD1E571007DF029 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Yuto Akiba";
+				TargetAttributes = {
+					D10DA7781CD1E571007DF029 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D10DA78C1CD1E572007DF029 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D10DA7781CD1E571007DF029;
+					};
+					D10DA7971CD1E572007DF029 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D10DA7781CD1E571007DF029;
+					};
+				};
+			};
+			buildConfigurationList = D10DA7741CD1E571007DF029 /* Build configuration list for PBXProject "Collecture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D10DA7701CD1E571007DF029;
+			productRefGroup = D10DA77A1CD1E571007DF029 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D10DA7781CD1E571007DF029 /* Collecture */,
+				D10DA78C1CD1E572007DF029 /* CollectureTests */,
+				D10DA7971CD1E572007DF029 /* CollectureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D10DA7771CD1E571007DF029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10DA7871CD1E571007DF029 /* LaunchScreen.storyboard in Resources */,
+				D10DA7841CD1E571007DF029 /* Assets.xcassets in Resources */,
+				D10DA7821CD1E571007DF029 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10DA78B1CD1E572007DF029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10DA7961CD1E572007DF029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D10DA7751CD1E571007DF029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10DA77F1CD1E571007DF029 /* ViewController.swift in Sources */,
+				D10DA77D1CD1E571007DF029 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10DA7891CD1E572007DF029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10DA7921CD1E572007DF029 /* CollectureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10DA7941CD1E572007DF029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10DA79D1CD1E572007DF029 /* CollectureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D10DA78F1CD1E572007DF029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10DA7781CD1E571007DF029 /* Collecture */;
+			targetProxy = D10DA78E1CD1E572007DF029 /* PBXContainerItemProxy */;
+		};
+		D10DA79A1CD1E572007DF029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10DA7781CD1E571007DF029 /* Collecture */;
+			targetProxy = D10DA7991CD1E572007DF029 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D10DA7801CD1E571007DF029 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D10DA7811CD1E571007DF029 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D10DA7851CD1E571007DF029 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D10DA7861CD1E571007DF029 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D10DA79F1CD1E572007DF029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D10DA7A01CD1E572007DF029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D10DA7A21CD1E572007DF029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Collecture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YutoAkiba.Collecture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D10DA7A31CD1E572007DF029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Collecture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YutoAkiba.Collecture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D10DA7A51CD1E572007DF029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CollectureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YutoAkiba.CollectureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collecture.app/Collecture";
+			};
+			name = Debug;
+		};
+		D10DA7A61CD1E572007DF029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CollectureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YutoAkiba.CollectureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collecture.app/Collecture";
+			};
+			name = Release;
+		};
+		D10DA7A81CD1E572007DF029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CollectureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YutoAkiba.CollectureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Collecture;
+			};
+			name = Debug;
+		};
+		D10DA7A91CD1E572007DF029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CollectureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YutoAkiba.CollectureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Collecture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D10DA7741CD1E571007DF029 /* Build configuration list for PBXProject "Collecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10DA79F1CD1E572007DF029 /* Debug */,
+				D10DA7A01CD1E572007DF029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10DA7A11CD1E572007DF029 /* Build configuration list for PBXNativeTarget "Collecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10DA7A21CD1E572007DF029 /* Debug */,
+				D10DA7A31CD1E572007DF029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D10DA7A41CD1E572007DF029 /* Build configuration list for PBXNativeTarget "CollectureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10DA7A51CD1E572007DF029 /* Debug */,
+				D10DA7A61CD1E572007DF029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D10DA7A71CD1E572007DF029 /* Build configuration list for PBXNativeTarget "CollectureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10DA7A81CD1E572007DF029 /* Debug */,
+				D10DA7A91CD1E572007DF029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D10DA7711CD1E571007DF029 /* Project object */;
+}
