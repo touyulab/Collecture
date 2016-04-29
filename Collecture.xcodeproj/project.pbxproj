@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		D10DA77D1CD1E571007DF029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA77C1CD1E571007DF029 /* AppDelegate.swift */; };
-		D10DA77F1CD1E571007DF029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA77E1CD1E571007DF029 /* ViewController.swift */; };
+		D10DA77F1CD1E571007DF029 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA77E1CD1E571007DF029 /* TimeTableViewController.swift */; };
 		D10DA7821CD1E571007DF029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10DA7801CD1E571007DF029 /* Main.storyboard */; };
 		D10DA7841CD1E571007DF029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10DA7831CD1E571007DF029 /* Assets.xcassets */; };
 		D10DA7871CD1E571007DF029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10DA7851CD1E571007DF029 /* LaunchScreen.storyboard */; };
 		D10DA7921CD1E572007DF029 /* CollectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA7911CD1E572007DF029 /* CollectureTests.swift */; };
 		D10DA79D1CD1E572007DF029 /* CollectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA79C1CD1E572007DF029 /* CollectureUITests.swift */; };
+		D1DBE3D21CD31A5F00F8B1DF /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBE3D11CD31A5F00F8B1DF /* OverlayView.swift */; };
+		D1EB1EE01CD1F77600DB372D /* DeviseSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EB1EDF1CD1F77600DB372D /* DeviseSize.swift */; };
+		D1EB1EE21CD2466500DB372D /* CollectureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EB1EE11CD2466500DB372D /* CollectureExtension.swift */; };
+		D1EB1EE41CD24CBE00DB372D /* FirstRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1EB1EE31CD24CBE00DB372D /* FirstRowCell.xib */; };
+		D1EB1EE91CD24E2E00DB372D /* FirstRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EB1EE81CD24E2E00DB372D /* FirstRowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		D10DA7791CD1E571007DF029 /* Collecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10DA77C1CD1E571007DF029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D10DA77E1CD1E571007DF029 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D10DA77E1CD1E571007DF029 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		D10DA7811CD1E571007DF029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D10DA7831CD1E571007DF029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D10DA7861CD1E571007DF029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		D10DA7981CD1E572007DF029 /* CollectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10DA79C1CD1E572007DF029 /* CollectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectureUITests.swift; sourceTree = "<group>"; };
 		D10DA79E1CD1E572007DF029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1DBE3D11CD31A5F00F8B1DF /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		D1EB1EDF1CD1F77600DB372D /* DeviseSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviseSize.swift; sourceTree = "<group>"; };
+		D1EB1EE11CD2466500DB372D /* CollectureExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectureExtension.swift; sourceTree = "<group>"; };
+		D1EB1EE31CD24CBE00DB372D /* FirstRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstRowCell.xib; sourceTree = "<group>"; };
+		D1EB1EE81CD24E2E00DB372D /* FirstRowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstRowCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				D10DA77C1CD1E571007DF029 /* AppDelegate.swift */,
-				D10DA77E1CD1E571007DF029 /* ViewController.swift */,
+				D1EB1EDF1CD1F77600DB372D /* DeviseSize.swift */,
+				D1EB1EE11CD2466500DB372D /* CollectureExtension.swift */,
+				D1EB1EE51CD24DE700DB372D /* CustomCell */,
+				D10DA77E1CD1E571007DF029 /* TimeTableViewController.swift */,
+				D1DBE3D01CD31A4C00F8B1DF /* CustomClass */,
 				D10DA7801CD1E571007DF029 /* Main.storyboard */,
 				D10DA7831CD1E571007DF029 /* Assets.xcassets */,
 				D10DA7851CD1E571007DF029 /* LaunchScreen.storyboard */,
@@ -123,6 +137,39 @@
 				D10DA79E1CD1E572007DF029 /* Info.plist */,
 			);
 			path = CollectureUITests;
+			sourceTree = "<group>";
+		};
+		D1DBE3D01CD31A4C00F8B1DF /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBE3D11CD31A5F00F8B1DF /* OverlayView.swift */,
+			);
+			name = CustomClass;
+			sourceTree = "<group>";
+		};
+		D1EB1EE51CD24DE700DB372D /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				D1EB1EE71CD24DFC00DB372D /* Xib */,
+				D1EB1EE61CD24DF400DB372D /* Code */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		D1EB1EE61CD24DF400DB372D /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				D1EB1EE81CD24E2E00DB372D /* FirstRowCell.swift */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		D1EB1EE71CD24DFC00DB372D /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				D1EB1EE31CD24CBE00DB372D /* FirstRowCell.xib */,
+			);
+			name = Xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1EB1EE41CD24CBE00DB372D /* FirstRowCell.xib in Resources */,
 				D10DA7871CD1E571007DF029 /* LaunchScreen.storyboard in Resources */,
 				D10DA7841CD1E571007DF029 /* Assets.xcassets in Resources */,
 				D10DA7821CD1E571007DF029 /* Main.storyboard in Resources */,
@@ -256,8 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D10DA77F1CD1E571007DF029 /* ViewController.swift in Sources */,
+				D1EB1EE91CD24E2E00DB372D /* FirstRowCell.swift in Sources */,
+				D10DA77F1CD1E571007DF029 /* TimeTableViewController.swift in Sources */,
 				D10DA77D1CD1E571007DF029 /* AppDelegate.swift in Sources */,
+				D1DBE3D21CD31A5F00F8B1DF /* OverlayView.swift in Sources */,
+				D1EB1EE01CD1F77600DB372D /* DeviseSize.swift in Sources */,
+				D1EB1EE21CD2466500DB372D /* CollectureExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +534,7 @@
 				D10DA7A31CD1E572007DF029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D10DA7A41CD1E572007DF029 /* Build configuration list for PBXNativeTarget "CollectureTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +543,7 @@
 				D10DA7A61CD1E572007DF029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D10DA7A71CD1E572007DF029 /* Build configuration list for PBXNativeTarget "CollectureUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +552,7 @@
 				D10DA7A91CD1E572007DF029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
