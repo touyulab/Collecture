@@ -15,6 +15,7 @@
 		D10DA7921CD1E572007DF029 /* CollectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA7911CD1E572007DF029 /* CollectureTests.swift */; };
 		D10DA79D1CD1E572007DF029 /* CollectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA79C1CD1E572007DF029 /* CollectureUITests.swift */; };
 		D1DBE3D21CD31A5F00F8B1DF /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBE3D11CD31A5F00F8B1DF /* OverlayView.swift */; };
+		D1DBE3D41CD34FDB00F8B1DF /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBE3D31CD34FDB00F8B1DF /* MenuButton.swift */; };
 		D1EB1EE01CD1F77600DB372D /* DeviseSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EB1EDF1CD1F77600DB372D /* DeviseSize.swift */; };
 		D1EB1EE21CD2466500DB372D /* CollectureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EB1EE11CD2466500DB372D /* CollectureExtension.swift */; };
 		D1EB1EE41CD24CBE00DB372D /* FirstRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1EB1EE31CD24CBE00DB372D /* FirstRowCell.xib */; };
@@ -53,6 +54,7 @@
 		D10DA79C1CD1E572007DF029 /* CollectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectureUITests.swift; sourceTree = "<group>"; };
 		D10DA79E1CD1E572007DF029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1DBE3D11CD31A5F00F8B1DF /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		D1DBE3D31CD34FDB00F8B1DF /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		D1EB1EDF1CD1F77600DB372D /* DeviseSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviseSize.swift; sourceTree = "<group>"; };
 		D1EB1EE11CD2466500DB372D /* CollectureExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectureExtension.swift; sourceTree = "<group>"; };
 		D1EB1EE31CD24CBE00DB372D /* FirstRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstRowCell.xib; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				D1DBE3D11CD31A5F00F8B1DF /* OverlayView.swift */,
+				D1DBE3D31CD34FDB00F8B1DF /* MenuButton.swift */,
 			);
 			name = CustomClass;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			files = (
 				D1EB1EE91CD24E2E00DB372D /* FirstRowCell.swift in Sources */,
 				D10DA77F1CD1E571007DF029 /* TimeTableViewController.swift in Sources */,
+				D1DBE3D41CD34FDB00F8B1DF /* MenuButton.swift in Sources */,
 				D10DA77D1CD1E571007DF029 /* AppDelegate.swift in Sources */,
 				D1DBE3D21CD31A5F00F8B1DF /* OverlayView.swift in Sources */,
 				D1EB1EE01CD1F77600DB372D /* DeviseSize.swift in Sources */,

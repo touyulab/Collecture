@@ -20,6 +20,15 @@ class TimeTableViewController: UIViewController {
         timeTableCollectionView.dataSource = self
         
         timeTableCollectionView.registerNib(UINib(nibName: String(FirstRowCell), bundle: nil), forCellWithReuseIdentifier: String(FirstRowCell))
+        
+        let menuButton = MenuButton(frame: CGRect(origin: CGPointZero, size: CGSize(width: 70, height: 70)))
+        menuButton.center = CGPoint(x: self.view.frame.size.width-50, y: self.view.frame.size.height-50)
+        menuButton.backgroundColor = UIColor.wetAsphalt()
+        menuButton.layer.masksToBounds = true
+        menuButton.layer.cornerRadius = 35
+        menuButton.addTarget(self, action: #selector(tapedMenuButton(_:)), forControlEvents: .TouchUpInside)
+        menuButton.setUpMenuButtons(self.navigationController!.view)
+        self.navigationController?.view.addSubview(menuButton)
     
     }
 
@@ -58,12 +67,6 @@ extension TimeTableViewController {
         overlayView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0)
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapedOverlayView(_:)))
         overlayView.addGestureRecognizer(tapRecognizer)
-//        UIView.animateWithDuration(0.4, animations: {
-//                overlayView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
-//                overlayView.frame = DeviseSize.bounds()
-//                self.setUpButton(overlayView)
-//            }, completion: { finished in
-//        })
         
         UIView.animateWithDuration(0.8, // アニメーションの時間
             delay: 0,  // アニメーションの遅延時間
@@ -74,7 +77,7 @@ extension TimeTableViewController {
                 // アニメーションする処理
                 overlayView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
                 overlayView.frame = DeviseSize.bounds()
-                self.setUpMenu(overlayView)
+                // self.setUpMenu(overlayView)
             },
             completion: {(finished: Bool) -> Void in
                 
@@ -84,87 +87,53 @@ extension TimeTableViewController {
     }
     
     func tapedOverlayView(gestureRecognizer: UITapGestureRecognizer) {
-        if let subViews = gestureRecognizer.view?.subviews {
-            for subView in subViews {
-                subView.alpha = 0
+        
+        let tapCGPoint = gestureRecognizer.locationOfTouch(0, inView: gestureRecognizer.view)
+        let pointXY = (tapCGPoint.x, tapCGPoint.y)
+        print(tapCGPoint)
+        print((gestureRecognizer.view as? OverlayView)?.pictureView.center)
+        guard let overlayView = gestureRecognizer.view as? OverlayView else { return }
+        
+        let pictureXRange: ClosedInterval<CGFloat> = overlayView.pictureView.frame.origin.x...overlayView.pictureView.frame.origin.x+overlayView.pictureView.frame.size.width
+        let pictureYRange: ClosedInterval<CGFloat> = overlayView.pictureView.frame.origin.y...overlayView.pictureView.frame.origin.y+overlayView.pictureView.frame.size.width
+
+        switch pointXY {
+        case (pictureXRange, pictureYRange):
+            print("pictureViewRange")
+        default:
+            if let subViews = gestureRecognizer.view?.subviews {
+                for subView in subViews {
+                    subView.alpha = 0
+                }
             }
+            UIView.animateWithDuration(0.4, animations: {
+                if let overlayView = gestureRecognizer.view as? OverlayView {
+                    gestureRecognizer.view?.frame = overlayView.originFrame
+                }
+                gestureRecognizer.view?.alpha = 0
+                }, completion: { finished in
+                    gestureRecognizer.view?.removeFromSuperview()
+            })
+            self.timeTableCollectionView.userInteractionEnabled = true
         }
-        UIView.animateWithDuration(0.4, animations: {
-            if let overlayView = gestureRecognizer.view as? OverlayView {
-                gestureRecognizer.view?.frame = overlayView.originFrame
-            }
-            gestureRecognizer.view?.alpha = 0
-            }, completion: { finished in
-                gestureRecognizer.view?.removeFromSuperview()
-        })
-        self.timeTableCollectionView.userInteractionEnabled = true
     }
     
-    func setUpMenu(overlayView: UIView) {
-        // let pictureView = UIView(frame: CGRect(origin: CGPointMake(overlayView.frame.size.width/2, overlayView.frame.size.height/4), size: CGSizeMake(85, 85)))
-        let pictureView = UIView(frame: CGRect(origin: CGPointZero, size: CGSizeMake(85, 85)))
-        pictureView.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/4)
-        pictureView.backgroundColor = UIColor.whiteColor()
-        pictureView.alpha = 0
-        pictureView.layer.masksToBounds = true
-        pictureView.layer.cornerRadius = 85/2
-        
-        let voiceView = UIView(frame: CGRect(origin: CGPointZero, size: CGSizeMake(85, 85)))
-        voiceView.center = CGPointMake(self.view.frame.size.width/4, self.view.frame.size.height/2)
-        voiceView.backgroundColor = UIColor.whiteColor()
-        voiceView.alpha = 0
-        voiceView.layer.masksToBounds = true
-        voiceView.layer.cornerRadius = 85/2
-        
-        let memoView = UIView(frame: CGRect(origin: CGPointZero, size: CGSizeMake(85, 85)))
-        memoView.center = CGPointMake(self.view.frame.size.width*3/4, self.view.frame.size.height/2)
-        memoView.backgroundColor = UIColor.whiteColor()
-        memoView.alpha = 0
-        memoView.layer.masksToBounds = true
-        memoView.layer.cornerRadius = 85/2
-        
-        let pictureLabel = UILabel()
-        pictureLabel.text = "写真を見る"
-        pictureLabel.textColor = UIColor.whiteColor()
-        pictureLabel.font = UIFont.systemFontOfSize(12)
-        pictureLabel.sizeToFit()
-        pictureLabel.center = CGPoint(x: pictureView.center.x, y: pictureView.frame.origin.y+pictureView.frame.size.height+10)
-        pictureLabel.alpha = 0
-        
-        let voiceLabel = UILabel()
-        voiceLabel.text = "音声を聞く"
-        voiceLabel.textColor = UIColor.whiteColor()
-        voiceLabel.font = UIFont.systemFontOfSize(12)
-        voiceLabel.sizeToFit()
-        voiceLabel.center = CGPoint(x: voiceView.center.x, y: voiceView.frame.origin.y+voiceView.frame.size.height+10)
-        voiceLabel.alpha = 0
-        
-        let memoLabel = UILabel()
-        memoLabel.text = "メモを見る"
-        memoLabel.textColor = UIColor.whiteColor()
-        memoLabel.font = UIFont.systemFontOfSize(12)
-        memoLabel.sizeToFit()
-        memoLabel.center = CGPoint(x: memoView.center.x, y: memoView.frame.origin.y+memoView.frame.size.height+10)
-        memoLabel.alpha = 0
-        
-        
-        UIView.animateWithDuration(0.8, animations: {
-            pictureView.alpha = 1
-            voiceView.alpha = 1
-            memoView.alpha = 1
-            pictureLabel.alpha = 1
-            voiceLabel.alpha = 1
-            memoLabel.alpha = 1
-            }, completion: { finished in
-                
-        })
-        
-        overlayView.addSubview(pictureView)
-        overlayView.addSubview(voiceView)
-        overlayView.addSubview(memoView)
-        overlayView.addSubview(pictureLabel)
-        overlayView.addSubview(voiceLabel)
-        overlayView.addSubview(memoLabel)
+    func tapedMenuButton(sender: UIButton) {
+        if sender.backgroundColor == UIColor.wetAsphalt() {
+            UIView.animateWithDuration(0.4, animations: {
+                sender.backgroundColor = UIColor.carrot()
+                if let menuButton = sender as? MenuButton {
+                    menuButton.tapedAnimation()
+                }
+            })
+        } else {
+            UIView.animateWithDuration(0.4, animations: {
+                sender.backgroundColor = UIColor.wetAsphalt()
+                if let menuButton = sender as? MenuButton {
+                    menuButton.cancelAnimetion()
+                }
+            })
+        }
     }
 }
 
