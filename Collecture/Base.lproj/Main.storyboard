@@ -58,6 +58,24 @@
             </objects>
             <point key="canvasLocation" x="323" y="883"/>
         </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="bzk-9O-vS3">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewController" id="1yr-qs-XgV" customClass="CameraViewController" customModule="Collecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PlK-Gq-uA9"/>
+                        <viewControllerLayoutGuide type="bottom" id="PpT-Uz-gSB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8UF-9U-QCw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PlH-FB-uph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="883"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="3jk-RC-s36">
             <objects>

@@ -28,6 +28,7 @@ class TimeTableViewController: UIViewController {
         menuButton.layer.cornerRadius = 35
         menuButton.addTarget(self, action: #selector(tapedMenuButton(_:)), forControlEvents: .TouchUpInside)
         menuButton.setUpMenuButtons(self.navigationController!.view)
+        menuButton.cameraButton.addTarget(self, action: #selector(tapedCameraButton(_:)), forControlEvents: .TouchUpInside)
         self.navigationController?.view.addSubview(menuButton)
     
     }
@@ -134,6 +135,14 @@ extension TimeTableViewController {
                 }
             })
         }
+    }
+    
+    func tapedCameraButton(sender: UIButton) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let cameraVC = mainStoryboard.instantiateViewControllerWithIdentifier(String(CameraViewController))
+        cameraVC.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+        self.presentViewController(cameraVC, animated: true, completion: nil)
+        
     }
 }
 

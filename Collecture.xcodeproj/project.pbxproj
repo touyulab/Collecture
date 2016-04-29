@@ -16,6 +16,7 @@
 		D10DA79D1CD1E572007DF029 /* CollectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10DA79C1CD1E572007DF029 /* CollectureUITests.swift */; };
 		D1DBE3D21CD31A5F00F8B1DF /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBE3D11CD31A5F00F8B1DF /* OverlayView.swift */; };
 		D1DBE3D41CD34FDB00F8B1DF /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBE3D31CD34FDB00F8B1DF /* MenuButton.swift */; };
+		D1DBE3D61CD3BFD800F8B1DF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBE3D51CD3BFD700F8B1DF /* CameraViewController.swift */; };
 		D1EB1EE01CD1F77600DB372D /* DeviseSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EB1EDF1CD1F77600DB372D /* DeviseSize.swift */; };
 		D1EB1EE21CD2466500DB372D /* CollectureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EB1EE11CD2466500DB372D /* CollectureExtension.swift */; };
 		D1EB1EE41CD24CBE00DB372D /* FirstRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1EB1EE31CD24CBE00DB372D /* FirstRowCell.xib */; };
@@ -55,6 +56,7 @@
 		D10DA79E1CD1E572007DF029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1DBE3D11CD31A5F00F8B1DF /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		D1DBE3D31CD34FDB00F8B1DF /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		D1DBE3D51CD3BFD700F8B1DF /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D1EB1EDF1CD1F77600DB372D /* DeviseSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviseSize.swift; sourceTree = "<group>"; };
 		D1EB1EE11CD2466500DB372D /* CollectureExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectureExtension.swift; sourceTree = "<group>"; };
 		D1EB1EE31CD24CBE00DB372D /* FirstRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstRowCell.xib; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				D10DA77C1CD1E571007DF029 /* AppDelegate.swift */,
 				D1EB1EDF1CD1F77600DB372D /* DeviseSize.swift */,
 				D1EB1EE11CD2466500DB372D /* CollectureExtension.swift */,
+				D1DBE3D51CD3BFD700F8B1DF /* CameraViewController.swift */,
 				D1EB1EE51CD24DE700DB372D /* CustomCell */,
 				D10DA77E1CD1E571007DF029 /* TimeTableViewController.swift */,
 				D1DBE3D01CD31A4C00F8B1DF /* CustomClass */,
@@ -312,6 +315,7 @@
 				D1DBE3D41CD34FDB00F8B1DF /* MenuButton.swift in Sources */,
 				D10DA77D1CD1E571007DF029 /* AppDelegate.swift in Sources */,
 				D1DBE3D21CD31A5F00F8B1DF /* OverlayView.swift in Sources */,
+				D1DBE3D61CD3BFD800F8B1DF /* CameraViewController.swift in Sources */,
 				D1EB1EE01CD1F77600DB372D /* DeviseSize.swift in Sources */,
 				D1EB1EE21CD2466500DB372D /* CollectureExtension.swift in Sources */,
 			);
